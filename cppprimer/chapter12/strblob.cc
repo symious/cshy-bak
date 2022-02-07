@@ -18,7 +18,7 @@ public:
     std::string& front();
     std::string& back();
     StrBlobPtr begin() {return StrBlobPtr(*this);};
-    StrBlobPtr end() {return StrBlobPtr(*this, (*data).size() -1); };
+    StrBlobPtr end() {return StrBlobPtr(*this, data->size()); };
 
 
 private:
